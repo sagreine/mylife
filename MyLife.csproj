@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E515BC9E-6096-45A6-8573-75A0CDCDC4FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyLife</RootNamespace>
+    <AssemblyName>MyLife</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Encoder, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Encoder.Types, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Encoder.Utilities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=x86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="R.NET">
+      <HintPath>..\..\..\..\..\..\..\Program Files\R\R-2.11.1\bin\R.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\System.Data.SQLite\2010\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Exercise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Exercise.Designer.cs">
+      <DependentUpon>Add_Exercise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Food.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Food.Designer.cs">
+      <DependentUpon>Add_Food.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analysis.Designer.cs">
+      <DependentUpon>Analysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analyze_Exercises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analyze_Exercises.Designer.cs">
+      <DependentUpon>Analyze_Exercises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analyze_Foods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analyze_Foods.Designer.cs">
+      <DependentUpon>Analyze_Foods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BodyMeasurements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BodyMeasurements.Designer.cs">
+      <DependentUpon>BodyMeasurements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="build_workouts_weeks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="build_workouts_weeks.Designer.cs">
+      <DependentUpon>build_workouts_weeks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="build_workouts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="build_workouts.Designer.cs">
+      <DependentUpon>build_workouts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Copy_days.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Copy_days.Designer.cs">
+      <DependentUpon>Copy_days.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Day_to_schedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Day_to_schedule.Designer.cs">
+      <DependentUpon>Day_to_schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flipbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flipbook.Designer.cs">
+      <DependentUpon>Flipbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogExerciseDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogExerciseDetails.Designer.cs">
+      <DependentUpon>LogExerciseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_Exercises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_Exercises.Designer.cs">
+      <DependentUpon>Log_Exercises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_Food.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_Food.Designer.cs">
+      <DependentUpon>Log_Food.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RGraphForm.cs" />
+    <Compile Include="RGraphForm.designer.cs">
+      <DependentUpon>RGraphForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RGraphHook.cs" />
+    <Compile Include="WebcamImageTaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebcamImageTaker.Designer.cs">
+      <DependentUpon>WebcamImageTaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Week_to_schedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Week_to_schedule.Designer.cs">
+      <DependentUpon>Week_to_schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsHook.cs" />
+    <Compile Include="build_workouts_days.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="build_workouts_days.Designer.cs">
+      <DependentUpon>build_workouts_days.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workout_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workout_info.Designer.cs">
+      <DependentUpon>Workout_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workout_Scheduler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workout_Scheduler.Designer.cs">
+      <DependentUpon>Workout_Scheduler.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Exercise.resx">
+      <DependentUpon>Add_Exercise.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Food.resx">
+      <DependentUpon>Add_Food.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analysis.resx">
+      <DependentUpon>Analysis.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analyze_Exercises.resx">
+      <DependentUpon>Analyze_Exercises.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analyze_Foods.resx">
+      <DependentUpon>Analyze_Foods.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BodyMeasurements.resx">
+      <DependentUpon>BodyMeasurements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="build_workouts_weeks.resx">
+      <DependentUpon>build_workouts_weeks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="build_workouts.resx">
+      <DependentUpon>build_workouts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Copy_days.resx">
+      <DependentUpon>Copy_days.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Day_to_schedule.resx">
+      <DependentUpon>Day_to_schedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flipbook.resx">
+      <DependentUpon>Flipbook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogExerciseDetails.resx">
+      <DependentUpon>LogExerciseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_Exercises.resx">
+      <DependentUpon>Log_Exercises.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_Food.resx">
+      <DependentUpon>Log_Food.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RGraphForm.resx">
+      <DependentUpon>RGraphForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="build_workouts_days.resx">
+      <DependentUpon>build_workouts_days.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebcamImageTaker.resx">
+      <DependentUpon>WebcamImageTaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Week_to_schedule.resx">
+      <DependentUpon>Week_to_schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workout_info.resx">
+      <DependentUpon>Workout_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workout_Scheduler.resx">
+      <DependentUpon>Workout_Scheduler.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Master_db1.sqlite" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ID-100114077.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ID-1008976.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ID-10040616.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
